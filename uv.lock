@@ -1940,6 +1940,11 @@ dependencies = [
     { name = "tavily-python" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=7.1.0" },
@@ -1969,6 +1974,9 @@ requires-dist = [
     { name = "tavily", specifier = ">=1.1.0" },
     { name = "tavily-python", specifier = ">=0.7.13" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.2.0" }]
 
 [[package]]
 name = "markdown-it-py"
